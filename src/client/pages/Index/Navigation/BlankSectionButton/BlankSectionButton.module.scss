@@ -1,0 +1,23 @@
+.blank-button {
+  height: 100%;
+  aspect-ratio: 4/3;
+  background-color: grey;
+}
+
+@media (min-width: 460px) {
+  .blank-button {
+    aspect-ratio: 5/3;
+  }
+}
+
+@media (min-width: 820px) {
+  .blank-button {
+    aspect-ratio: 6/3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blank-button {
+    aspect-ratio: 7/3;
+  }
+}
