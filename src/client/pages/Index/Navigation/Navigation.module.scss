@@ -1,0 +1,26 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  height: 50px;
+  bottom: 0;
+  background-color: green;
+}
+
+@media (min-width: 460px) {
+  .navigation {
+    height: 55px;
+  }
+}
+
+@media (min-width: 820px) {
+  .navigation {
+    height: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navigation {
+    height: 75px;
+  }
+}
