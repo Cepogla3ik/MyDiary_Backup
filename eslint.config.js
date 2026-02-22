@@ -62,5 +62,5 @@ export default defineConfig([
     rules: {
       "@typescript-eslint/no-var-requires": "off",
     },
-  },
+  }
 ])
