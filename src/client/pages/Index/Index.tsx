@@ -16,7 +16,7 @@ export default function Index() {
   return (<>
     <Header />
     <Main />
-    <Navigation />
+   {/* <Navigation /> */}
   </>
   );
 }

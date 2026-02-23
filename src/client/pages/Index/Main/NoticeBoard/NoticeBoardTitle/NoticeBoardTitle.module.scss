@@ -1,0 +1,17 @@
+.notice-board-title {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: clamp(55px, 5%, 100px);
+  background-color: hsl(65 45% 55%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px 16px 0 0;
+}
+.notice-board-title > h2 {
+  margin: 0;
+  color: hsl(65 45% 30%);
+  font-size: clamp(26px, 10%, 46px);
+}

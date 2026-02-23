@@ -1,8 +1,17 @@
 .main {
   position: relative;
-  left: 0;
-  top: 0;
+  display: flex;
+  /* Центрирование через margin: auto у ребенка работает лучше для переполнения */
+  justify-content: center; 
+  align-items: center;
+  
   width: 100%;
-  height: calc(100% - 95px);
+  /* Вычитаем высоту шапки/футера, если нужно */
+  height: calc(100vh - 95px); 
   background-color: yellow;
+  
+  /* Разрешаем скролл в обе стороны */
+  overflow: auto; 
+  padding: 25px; /* Те самые отступы вокруг доски */
+  box-sizing: border-box;
 }
