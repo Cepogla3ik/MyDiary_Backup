@@ -1,8 +1,37 @@
 .main {
+  --header-height: 45px;
+  --navigation-height: 50px;
+
   position: relative;
   width: 100%;
-  height: calc(100% - 95px); 
+  height: calc(100% - var(--header-height) - var(--navigation-height)); 
   background-color: yellow;
   padding-inline: 40px;
   overflow: auto;
+}
+
+@media (min-width: 460px) {
+  .main {
+    --header-height: 55px;
+    --navigation-height: 55px;
+  }
+}
+
+@media (min-width: 820px) {
+  .main {
+    --header-height: 65px;
+    --navigation-height: 65px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    --header-height: 75px;
+    --navigation-height: 70px;
+  }
+}
+@media (min-width: 1230px) {
+  .main {
+    --navigation-height: 80px;
+  }
 }
