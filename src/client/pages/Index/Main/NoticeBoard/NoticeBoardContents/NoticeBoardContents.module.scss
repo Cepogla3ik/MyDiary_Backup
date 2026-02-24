@@ -1,6 +1,10 @@
 .notice-board-contents {
+  position: relative;
   width: 100%;
   height: calc(100% - clamp(55px, 5%, 100px));
-  background-color: hsl(200 50% 60% / 0.8);
+  background-color: hsl(200 50% 60% / 0.4);
   border-radius: 0 0 16px 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px 10px;
 }
