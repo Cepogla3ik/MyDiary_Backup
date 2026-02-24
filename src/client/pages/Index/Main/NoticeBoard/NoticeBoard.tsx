@@ -1,5 +1,6 @@
 import styles from "./NoticeBoard.module.scss";
 import NoticeBoardTitle from "./NoticeBoardTitle/NoticeBoardTitle";
+import NoticeBoardContents from "./NoticeBoardContents/NoticeBoardContents";
 import mainElementStyles from "../Main.module.scss";
 import { useEffect, useState } from 'react';
 
@@ -33,6 +34,7 @@ export default function NoticeBoard() {
   return (
     <div className={styles["notice-board"]}>
       <NoticeBoardTitle />
+      <NoticeBoardContents />
     </div>
   );
 }
