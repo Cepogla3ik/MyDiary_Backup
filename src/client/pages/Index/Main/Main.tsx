@@ -16,6 +16,8 @@ export default function Main() {
             const mainElementWidth = mainElement.offsetWidth;
             if (mainElementWidth - noticeBoardElementWidth > 0) {
               mainElement.style.paddingInline = `${(mainElementWidth - noticeBoardElementWidth) / 2}px`;
+            } else {
+              mainElement.style.paddingInline = '35px';
             }
           }
         }

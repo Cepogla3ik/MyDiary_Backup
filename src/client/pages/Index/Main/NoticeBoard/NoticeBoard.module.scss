@@ -1,12 +1,15 @@
 .notice-board {
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   height: 75%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 13 / 9;
   background-color: hsl(50 70% 50%);
-  border: dashed 6px hsl(60 60% 45%);
+  border: solid 6px hsl(60 60% 45%);
   border-radius: 22px;
-  // min-width: 75%;
   min-height: 300px;
+}
+
+@media (min-width: 520px) {
+  .notice-board {
+    aspect-ratio: 16 / 9;
+  }
 }
