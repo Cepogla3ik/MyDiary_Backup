@@ -1,14 +1,14 @@
-.subject-block {
-  width: 52.5%;
+.info-block {
+  width: 20%;
   height: 100%;
   background: transparent;
-  border-right: solid 2px hsl(240 30% 45%);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0 9px 9px 0;
 }
 
-.subject-block > p {
+.info-block > p {
   font-size: 22px;
   font-weight: 500;
 }

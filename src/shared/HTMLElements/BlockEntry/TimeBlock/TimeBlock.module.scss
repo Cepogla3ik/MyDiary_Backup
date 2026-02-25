@@ -1,5 +1,5 @@
-.subject-block {
-  width: 52.5%;
+.time-block {
+  width: 20%;
   height: 100%;
   background: transparent;
   border-right: solid 2px hsl(240 30% 45%);
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.subject-block > p {
+.time-block > p {
   font-size: 22px;
   font-weight: 500;
 }

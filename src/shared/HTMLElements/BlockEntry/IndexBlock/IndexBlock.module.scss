@@ -6,10 +6,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 9px 0 0 9px;
 }
 
 .index-block > b {
-  font-family: Sans-Serif;
   font-size: clamp(16px, 125%, 38px);
-  color: hsl(240 30% 30%);
 }
