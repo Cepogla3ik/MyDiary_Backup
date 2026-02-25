@@ -1,0 +1,14 @@
+.subject-block {
+  width: 67.5%;
+  height: 100%;
+  background: transparent;
+  border-right: solid 2px hsl(240 30% 45%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subject-block > p {
+  font-size: 22px;
+  font-weight: 500;
+}

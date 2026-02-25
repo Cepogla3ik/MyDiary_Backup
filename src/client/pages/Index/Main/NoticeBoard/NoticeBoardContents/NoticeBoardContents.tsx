@@ -5,23 +5,8 @@ export default function NoticeBoardContents() {
   
   return (
     <div className={styles["notice-board-contents"]}>
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
-      <BlockEntry />
+      <BlockEntry index={1} subject={'Maths'} />
+      <BlockEntry index={2} subject={'English'} />
       <BlockEntry />
     </div>
   );

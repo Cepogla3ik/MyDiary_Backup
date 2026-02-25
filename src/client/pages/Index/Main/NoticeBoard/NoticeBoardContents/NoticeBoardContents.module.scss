@@ -8,3 +8,6 @@
   overflow-y: auto;
   padding: 20px 10px;
 }
+.notice-board-contents > div:not(:last-child) {
+  margin-bottom: 10px;
+}

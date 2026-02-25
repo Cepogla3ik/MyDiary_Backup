@@ -1,0 +1,15 @@
+.index-block {
+  width: 7.5%;
+  height: 100%;
+  background: transparent;
+  border-right: solid 2px hsl(240 30% 45%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-block > b {
+  font-family: Sans-Serif;
+  font-size: clamp(16px, 125%, 38px);
+  color: hsl(240 30% 30%);
+}
