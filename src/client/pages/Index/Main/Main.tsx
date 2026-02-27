@@ -9,6 +9,19 @@ export default function Main() {
   const [count] = useState<number>(0);
 
   useEffect(() => {
+    const mainElement: null | HTMLElement = document.querySelector(`.${styles.main}`);
+    const boardPageControlElement: null | HTMLElement = document.querySelector(`.${boardPageControlStyles["board-page-control"]}`);
+    const noticeBoardElement: null| HTMLElement = document.querySelector(`.${noticeBoardStyles["notice-board"]}`);
+    const fixPageControlHTMLElementsArray = [boardPageControlElement, mainElement, noticeBoardElement];
+    
+    function fixBoardPageControlPos([boardPageControlEl, overflowEl, noticeBoardEl]) {
+      const mainElementScrollLeft = Number(overflowEl.scrollLeft.toFixed(0));
+      const mainElementScrollTop = Number(overflowEl.scrollTop.toFixed(0));
+      boardPageControlEl.style.left = `${(window.innerWidth / 2) - (boardPageControlEl.getBoundingClientRect().width / 2) + mainElementScrollLeft}px`;
+      boardPageControlEl.style.top = `${10 + mainElementScrollTop}px`;
+      boardPageControlEl.style.maxWidth = `${noticeBoardEl.getBoundingClientRect().width - 50}px`;
+    }
+    
     function handleResize() {
       const noticeBoardElement: HTMLElement | null = document.querySelector(`.${noticeBoardStyles["notice-board"]}`);
         if (noticeBoardElement) {
@@ -23,31 +36,24 @@ export default function Main() {
             }
           }
         }
+        if (!fixPageControlHTMLElementsArray.includes(undefined)) {
+          fixBoardPageControlPos(fixPageControlHTMLElementsArray);
+        }
     }
     handleResize();
     
-    const mainElement: null | HTMLElement = document.querySelector(`.${styles.main}`);
-    const boardPageControlElement: null | HTMLElement = document.querySelector(`.${boardPageControlStyles["board-page-control"]}`);
-    
-    function fixBoardPageControlPos(overflowElement) {
-      const mainElementScrollLeft = Number(overflowElement.scrollLeft.toFixed(0));
-      const mainElementScrollTop = Number(overflowElement.scrollTop.toFixed(0));
-      boardPageControlElement.style.left = `${(window.innerWidth / 2) - (boardPageControlElement.getBoundingClientRect().width / 2) + mainElementScrollLeft}px`;
-      boardPageControlElement.style.top = `${10 + mainElementScrollTop}px`;
-    }
-    
-    if (mainElement) {
-      fixBoardPageControlPos(mainElement);
+    if (!fixPageControlHTMLElementsArray.includes(undefined)) {
+      fixBoardPageControlPos(fixPageControlHTMLElementsArray);
     }
 
     window.addEventListener('resize', handleResize);
-    if (mainElement) {
-      mainElement.addEventListener('scroll', () => fixBoardPageControlPos(mainElement));
+    if (!fixPageControlHTMLElementsArray.includes(undefined)) {
+      mainElement.addEventListener('scroll', () => fixBoardPageControlPos(fixPageControlHTMLElementsArray));
     }
     return () => {
       window.removeEventListener('resize', handleResize);
-      if (mainElement) {
-        mainElement.removeEventListener('scroll', () => fixBoardPageControlPos(mainElement));
+      if (!fixPageControlHTMLElementsArray.includes(undefined)) {
+        mainElement.removeEventListener('scroll', () => fixBoardPageControlPos(fixPageControlHTMLElementsArray));
       }
     }
   }, [count]);
