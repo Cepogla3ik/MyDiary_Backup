@@ -18,7 +18,7 @@ const sectionsSlice = createSlice({
   name: 'sections',
   initialState,
   reducers: {
-    setSectionsState: (state, action: PayloadAction<Partial<PagesState>>) => {
+    setSectionsState: (state, action: PayloadAction<Partial<SectionsState>>) => {
       state.board = action.payload.board ?? state.board;
       state.diary = action.payload.diary ?? state.diary;
       state.blank = action.payload.blank ?? state.blank;

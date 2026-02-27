@@ -14,7 +14,7 @@ interface BlockParams {
   info?: InfoString;
 }
 
-export default function BlockEntry({ index = 0, subject = 'Subject', time = '00:00', info = 124 }: BlockParams) {
+export default function BlockEntry({ index, subject, time, info }: BlockParams) {
   
   return (
     <div className={styles["block-entry"]}>
