@@ -4,7 +4,7 @@
   top: 0;
   width: 100%;
   height: clamp(55px, 5%, 100px);
-  background-color: hsl(65 45% 55%);
+  background-color: hsl(35 45% 55%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
 }
 .notice-board-title > h2 {
   margin: 0;
-  color: hsl(65 45% 30%);
+  color: hsl(35 45% 30%);
   font-size: clamp(26px, 10%, 46px);
   user-select: none;
 }

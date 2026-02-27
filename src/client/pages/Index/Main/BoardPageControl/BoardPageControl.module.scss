@@ -1,0 +1,10 @@
+.board-page-control {
+  position: absolute;
+  width: 80vw;
+  height: 50px;
+  border-radius: 10px;
+  background-color: hsl(200 40% 50% / 0.5);
+  z-index: 750;
+  opacity: 0.8;
+  transition: left 0.15s linear, top 0.15s linear;
+}

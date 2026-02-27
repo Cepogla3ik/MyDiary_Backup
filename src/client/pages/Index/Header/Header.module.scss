@@ -7,14 +7,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(40 90% 50%);
+  background: linear-gradient(-10deg ,hsl(40 5% 65%), hsl(45, 5%, 55%));
   overflow: hidden;
 }
 .header > h1 {
   position: absolute;
   user-select: none;
   pointer-events: none;
-  color: hsl(40 90% 25%);
+  color: hsl(0 0% 40%);
 }
 
 @media (min-width: 460px) {

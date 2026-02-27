@@ -5,7 +5,7 @@
   position: relative;
   width: 100%;
   height: calc(100% - var(--header-height) - var(--navigation-height)); 
-  background-color: yellow;
+  background: linear-gradient(20deg, hsl(35 20% 55%), hsl(40 65% 55%), hsl(40 20% 62.5%));
   padding-inline: 40px;
   overflow: auto;
 }
